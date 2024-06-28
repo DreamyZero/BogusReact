@@ -1,4 +1,3 @@
-// Файл с общими стилями, которые можно будет использовать на разных страницах
 import { StyleSheet, Platform } from 'react-native';
 
 export const gStyles = StyleSheet.create({
@@ -57,7 +56,6 @@ export const gStyles = StyleSheet.create({
         textAlign: 'center',
         margin: 15,
         fontSize: 16,
-        // Для примера сделал другой цвет обычного текста на разных платформах.
         ...Platform.select({
             ios: {
                 color: '#EDE8E4'
@@ -66,7 +64,6 @@ export const gStyles = StyleSheet.create({
                 color: 'green'
             },
             default: {
-                // Для других платформ (веб...)
                 color: 'white',
             },
         }),

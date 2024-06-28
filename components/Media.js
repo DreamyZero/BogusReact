@@ -16,7 +16,6 @@ export default function App() {
             await sound.playAsync();
             setIsMusicPlaying(true);
         } else {
-            // Остановить музыку 
             await sound.stopAsync();
             setIsMusicPlaying(false);
             sound.unloadAsync();
